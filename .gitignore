@@ -1,0 +1,16 @@
+# .cursor 내부 - 환경별/캐시/로그 제외
+.cursor/logs/
+.cursor/cache/
+.cursor/projects/
+.cursor/*.db
+.cursor/*.sqlite
+
+# 프로젝트별 생성 파일
+.cursor/config/project-config.json
+.cursor/docs/deep-discovery/*.json
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

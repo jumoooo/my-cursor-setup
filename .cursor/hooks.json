@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "dart .cursor/hooks/format_dart.dart"
+      }
+    ]
+  }
+}
