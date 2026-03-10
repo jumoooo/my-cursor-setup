@@ -42,9 +42,17 @@ Copy-Item -Recurse my-cursor-setup-flutter\.cursor -Destination C:\path\to\your-
 2. Cursor에서 프로젝트 열기
 3. Agent가 자동으로 활성화됩니다
 
+## 🌿 브랜치
+
+| 브랜치 | 용도 |
+|--------|------|
+| `main` | 안정 버전 (배포용) |
+| `develop` | 개발/실험용 |
+
 ## 🏷️ 버전
 
 - `main`: 최신 안정 버전
+- `develop`: 개발 중인 변경사항
 - 특정 버전: `git clone --branch v1.0.0 ...`
 
 ## 📄 라이선스
