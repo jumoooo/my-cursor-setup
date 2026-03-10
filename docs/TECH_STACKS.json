@@ -1,0 +1,62 @@
+{
+  "tags": {
+    "common": "모든 프로젝트 공통",
+    "flutter": "Flutter/Dart 프로젝트 전용",
+    "react": "React 프로젝트 전용 (추가 예정)"
+  },
+  "rules": {
+    "orchestrator.mdc": "common",
+    "planner.mdc": "common",
+    "agent-handoff.mdc": "common",
+    "agent-builder.mdc": "common",
+    "bilingual-docs.mdc": "common",
+    "code-style.mdc": "common",
+    "deep-discovery-agent.mdc": "common",
+    "env-orchestrator-architect.mdc": "common",
+    "flutter-animation.mdc": "flutter",
+    "flutter-test.mdc": "flutter",
+    "state-management.mdc": "flutter"
+  },
+  "agents": {
+    "orchestrator.md": "common",
+    "planner.md": "common",
+    "commitAgent.md": "common",
+    "agentBuilder.md": "common",
+    "agentCritic.md": "common",
+    "deepDiscoveryAgent.md": "common",
+    "contentConsistencyAgent.md": "common",
+    "envOrchestratorArchitect.md": "common",
+    "cursorSetup.md": "common",
+    "cursorLibraryExtract.md": "common",
+    "featureImplementation.md": "flutter",
+    "uiComponentBuilder.md": "flutter",
+    "testCodeGenerator.md": "flutter",
+    "uiStyleRefiner.md": "flutter",
+    "apiIntegration.md": "flutter"
+  },
+  "skills": {
+    "orchestrator-skills": "common",
+    "planner-skills": "common",
+    "agent-builder": "common",
+    "agent-critic": "common",
+    "commit-agent": "common",
+    "content-consistency": "common",
+    "cursor-setup": "common",
+    "cursor-library-extract": "common",
+    "deep-discovery-agent": "common",
+    "env-orchestrator-architect": "common",
+    "feature-implementation": "flutter",
+    "ui-component-builder": "flutter",
+    "test-code-generator": "flutter",
+    "ui-style-refiner": "flutter",
+    "api-integration": "flutter"
+  },
+  "hooks": {
+    "format_dart.dart": "flutter"
+  },
+  "always_include": [
+    "AGENTS.md",
+    "hooks.json",
+    "config/project-config.template.json"
+  ]
+}

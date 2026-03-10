@@ -517,7 +517,20 @@ Agents are organized by category for better discoverability and management:
 - **Status**: Active
 - **Usage**: One-time setup agent — invoked when initializing Cursor Agent system in a new project
 
-#### 14. envOrchestratorArchitect
+#### 14. cursorLibraryExtract
+- **Category**: 🎼 System Management
+- **Purpose**: Cursor 설정 도서관에서 프로젝트에 맞는 파일만 추출하여 `.cursor_new` 구축
+- **Capabilities**:
+  - Detect project type (Flutter, React, etc.) from target project
+  - Read TECH_STACKS.json, select common + project-tagged files only
+  - Copy to `.cursor_new` with report (공통 N개, 프로젝트 적합 M개, 선택 이유, 각 파일 설명)
+  - Optional: write CURSOR_EXTRACT_REPORT.md to project root
+- **Triggers**: ".cursor에서 프로젝트에 맞는 것들만 빼서 구축해줘", "도서관에서 이 프로젝트용 설정만 추출해줘"
+- **MCP Tools**: Codebase Search
+- **Status**: Active
+- **Usage**: Library-to-project setup — invoked when user wants project-specific .cursor from library
+
+#### 15. envOrchestratorArchitect
 - **Category**: 🎼 System Management
 - **Purpose**: Agent/environment architecture design — designs and maintains `.cursor` agents/rules/config
 - **Capabilities**:
@@ -738,6 +751,13 @@ Agents are organized by category for better discoverability and management:
 - **Example**:
   - New project with `cursor_zip` folder → cursorSetup builds `.cursor` structure automatically
   - "새 프로젝트에 cursor agent 환경 구축해줘" → cursorSetup
+
+### Rule 12-1: Cursor Library Extract (도서관 → 프로젝트 맞춤)
+- **Primary Agent**: cursorLibraryExtract
+- **When to use**: ".cursor에서 프로젝트에 맞는 것들만 빼서 구축해줘", "도서관에서 이 프로젝트용 설정만 추출해줘"
+- **Example**:
+  - "프로젝트에 맞는 것들만 .cursor_new로 구축해줘" → cursorLibraryExtract
+  - Output: `.cursor_new` + report (공통/프로젝트 적합 개수, 선택 이유, 각 파일 설명)
 
 ### Rule 13: Agent/Environment Architecture Tasks
 - **Primary Agent**: envOrchestratorArchitect

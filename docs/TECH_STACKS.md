@@ -43,6 +43,7 @@
 | contentConsistencyAgent.md | common | |
 | envOrchestratorArchitect.md | common | |
 | cursorSetup.md | common | |
+| cursorLibraryExtract.md | common | 도서관→프로젝트 맞춤 추출 |
 | featureImplementation.md | flutter | Flutter 전용 |
 | uiComponentBuilder.md | flutter | |
 | testCodeGenerator.md | flutter | Flutter Test |
@@ -62,6 +63,7 @@
 | commit-agent | common |
 | content-consistency | common |
 | cursor-setup | common |
+| cursor-library-extract | common |
 | deep-discovery-agent | common |
 | env-orchestrator-architect | common |
 | feature-implementation | flutter |

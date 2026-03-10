@@ -56,7 +56,18 @@ cp -r .cursor /path/to/your-flutter-project/
 
 **다른 스택 추가 후:** `docs/TECH_STACKS.md`를 참고해 해당 스택만 포함하는 방식으로 복사합니다.
 
-### 3. 설치 후
+### 3. Cursor Agent로 추출 (권장)
+
+대상 프로젝트에서 이 저장소를 submodule로 추가한 뒤, Cursor에서:
+
+```
+.cursor에서 프로젝트에 맞는 것들만 빼서 구축해줘
+```
+
+→ `cursorLibraryExtract` Agent가 공통 + 프로젝트 타입별 파일만 선별하여 `.cursor_new`를 생성합니다.  
+검토 후 `mv .cursor_new .cursor`로 적용하세요.
+
+### 4. 설치 후
 
 1. `config/project-config.template.json`을 `config/project-config.json`으로 복사 후 프로젝트에 맞게 수정
 2. Cursor에서 프로젝트 열기

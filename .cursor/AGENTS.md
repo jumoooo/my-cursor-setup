@@ -14,6 +14,7 @@
 
 ### Optional / Meta Agents
 
+- **cursorLibraryExtract**: 도서관에서 프로젝트 맞춤 .cursor_new 구축 (공통 + 프로젝트 타입별 파일만 추출)
 - **agentBuilder, agentCritic, contentConsistencyAgent, envOrchestratorArchitect, deepDiscoveryAgent** 등은
   - 이 프로젝트에서는 주로 **환경/설계 개선 시에만 수동으로 호출**하는 메타 Agent로 취급합니다.
 
